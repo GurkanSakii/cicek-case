@@ -1,0 +1,13 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .not-found {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}

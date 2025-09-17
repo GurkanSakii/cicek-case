@@ -1,0 +1,30 @@
+.category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1em;
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .category-btn {
+    border: 1px solid #f2f2f2;
+    color: #707070;
+    background-color: transparent;
+    border-radius: 0.5em;
+    padding: 0.75em 1em;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+    flex: 1 13%;
+
+    &:hover {
+      background: #e5e5e5;
+    }
+
+    &.active {
+      background: #0066d1;
+      color: white;
+    }
+  }
+}

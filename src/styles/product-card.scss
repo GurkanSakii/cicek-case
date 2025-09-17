@@ -1,0 +1,70 @@
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  background: #fff;
+
+  img {
+    max-width: 100%;
+    border-radius: 6px;
+    min-height: 12.5em;
+  }
+
+  h4 {
+    font-size: 14px;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+
+  .add-btn {
+    background: #fff;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 0.75em 1em;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+  }
+
+  .qty-controller {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0;
+    border-radius: 2em;
+    padding: 0.25rem 0.5rem;
+    background: #fff;
+
+    .qty-btn {
+      background: #e6f0ff;
+      border: none;
+      color: #007bff;
+      font-size: 18px;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+
+      &:hover {
+        background: #cce0ff;
+      }
+    }
+
+    .qty {
+      font-size: 16px;
+      font-weight: bold;
+      min-width: 20px;
+      text-align: center;
+    }
+  }
+}
