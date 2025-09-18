@@ -5,6 +5,7 @@ import gift from "../assets/gift.PNG";
 
 const PromotionSection = () => {
   return (
+    // generated-with-AI (revized)
     <div className="promotion-section">
       <div className="promo-cards">
         <div className="promo-card pink">

@@ -6,7 +6,7 @@ const ProductCard = ({ product, cart, setCart }) => {
   const addToCart = () => {
     setCart([...cart, { ...product, quantity: 1 }]);
   };
-
+  // generated-with-AI (revized)
   const increaseQuantity = () => {
     setCart(cart.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item)));
   };

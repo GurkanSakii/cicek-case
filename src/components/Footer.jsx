@@ -12,6 +12,7 @@ import banner from "../assets/banner.PNG";
 
 const Footer = () => {
   return (
+    // generated-with-AI (revized)
     <footer className="footer">
       <div className="container">
         <div className="app-download">
