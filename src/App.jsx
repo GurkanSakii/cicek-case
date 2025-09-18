@@ -4,6 +4,7 @@ import CategoryBar from "./components/CategoryBar";
 import ProductList from "./components/ProductList";
 import Footer from "./components/Footer";
 import "./styles/base.scss";
+import PromotionSection from "./components/PromotionSection";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -15,6 +16,7 @@ function App() {
       <Header cart={cart} setSearchTerm={setSearchTerm} />
       <CategoryBar setCategory={setCategory} />
       <ProductList category={category} searchTerm={searchTerm} cart={cart} setCart={setCart} />
+      <PromotionSection />
       <Footer />
     </div>
   );

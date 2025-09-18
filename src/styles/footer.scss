@@ -1,52 +1,119 @@
+@import "./variables";
 .footer {
-  background: #f8f8f8;
-  color: #000;
+  background: #f9f9f9;
+  color: $secondary-text-color;
   font-size: 14px;
-  padding: 2em 0 0 0;
+  padding-top: 2em;
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+  }
+
+  .app-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: $app-bg;
+    border-radius: 24px;
+    padding: 2em;
+    gap: 2em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2em;
+
+    .phones img {
+      height: 280px;
+    }
+
+    .download-info {
+      .qr-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+
+        .qr {
+          margin-right: 1em;
+        }
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0 0 0.3em 0;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        color: $secondary-text-color;
+        margin: 0 0 1em 0;
+      }
+
+      .store-buttons {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          height: 42px;
+          cursor: pointer;
+          transition: transform 0.2s;
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
 
   .footer-top {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 0 1em;
+    justify-content: space-between;
+    gap: 2.5em;
+    margin-bottom: 2em;
 
     .footer-left {
-      flex: 1;
-      min-width: 250px;
+      flex: 1 1;
 
       .footer-logo {
         width: 160px;
-        margin-bottom: 1rem;
-      }
-
-      .kvkk {
-        font-size: 13px;
-        margin-bottom: 1rem;
-
-        a {
-          color: #0070f3;
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+        margin-bottom: 1em;
       }
 
       .social-icons {
         display: flex;
-        gap: 2em;
+        gap: 1.2em;
+        margin-bottom: 1em;
 
         img {
           width: 28px;
           height: 28px;
           cursor: pointer;
-          transition: transform 0.2s;
+          transition: all 0.2s ease;
 
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.15);
+          }
+        }
+      }
+
+      .kvkk {
+        font-size: 12.5px;
+        line-height: 1.6;
+        color: $secondary-text-color;
+
+        a {
+          color: #0066cc;
+          font-weight: 500;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
           }
         }
       }
@@ -56,9 +123,11 @@
       flex: 2;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
+      gap: 2em;
 
       p {
+        font-weight: 600;
+        font-size: 15px;
         color: #044dc3;
         margin-bottom: 1em;
       }
@@ -69,11 +138,14 @@
         margin: 0;
 
         li {
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.6em;
+          font-size: 13.5px;
+          color: $secondary-text-color;
           cursor: pointer;
+          transition: color 0.2s;
 
           &:hover {
-            text-decoration: underline;
+            color: #044dc3;
           }
         }
       }
@@ -81,17 +153,20 @@
   }
 
   .footer-text {
-    max-width: 1200px;
-    margin: 2em auto;
+    max-width: 1100px;
+    margin: 0 auto 2em auto;
     font-size: 13px;
-    padding: 0 1em;
+    line-height: 1.6;
+    color: $secondary-text-color;
+    text-align: center;
   }
 
   .footer-bottom {
     text-align: center;
     font-size: 12px;
-    background-color: #e6e6e6;
-    border-top: 1px solid #ddd;
-    padding: 1em 0;
+    background-color: #efefef;
+    border-top: 1px solid $border-color;
+    padding: 1em;
+    color: $secondary-text-color;
   }
 }

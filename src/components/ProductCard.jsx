@@ -1,6 +1,6 @@
 import "../styles/product-card.scss";
 
-function ProductCard({ product, cart, setCart }) {
+const ProductCard = ({ product, cart, setCart }) => {
   const cartItem = cart.find((item) => item.id === product.id);
 
   const addToCart = () => {
@@ -22,8 +22,8 @@ function ProductCard({ product, cart, setCart }) {
   return (
     <div className="product-card">
       <img src={product.image} alt={product.name} />
-      <span>{product.name}</span>
-      <p>{product.price} TL</p>
+      <p className="product-name">{product.name}</p>
+      <p className="product-price">{product.price} TL</p>
 
       {!cartItem ? (
         <button className="add-btn" onClick={addToCart}>
@@ -42,6 +42,6 @@ function ProductCard({ product, cart, setCart }) {
       )}
     </div>
   );
-}
+};
 
 export default ProductCard;

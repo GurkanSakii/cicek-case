@@ -1,6 +1,6 @@
 import "../styles/cart-bar.scss";
 
-function CartBar({ cart }) {
+const CartBar = ({ cart }) => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const freeShipping = total >= 500;
   const remaining = 500 - total;
@@ -18,6 +18,6 @@ function CartBar({ cart }) {
       )}
     </>
   );
-}
+};
 
 export default CartBar;

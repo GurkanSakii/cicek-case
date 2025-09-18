@@ -1,15 +1,17 @@
+@import "./variables";
+
 .category-bar {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.5em;
   padding: 1em;
-  background: #fff;
-  max-width: 1200px;
+  background: $app-bg;
+  max-width: 1400px;
   margin: 0 auto;
 
   .category-btn {
-    border: 1px solid #f2f2f2;
-    color: #707070;
+    border: 1px solid $border-color;
+    color: $secondary-text-color;
     background-color: transparent;
     border-radius: 0.5em;
     padding: 0.75em 1em;
@@ -24,7 +26,7 @@
 
     &.active {
       background: #0066d1;
-      color: white;
+      color: $text-color;
     }
   }
 }

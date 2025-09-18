@@ -1,0 +1,75 @@
+@import "./variables";
+
+.promotion-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 2px solid $border-color;
+  padding-top: 1em;
+  .promo-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+
+    .promo-card {
+      flex: 1;
+      padding: 1em;
+      border-radius: 0.5em;
+      text-align: center;
+      background: $app-bg;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1em;
+
+      span {
+        margin: 1em;
+        text-align: left;
+
+        p {
+          margin: 0 0 0.5em 0;
+          font-size: 24px;
+          font-weight: 300;
+        }
+
+        button {
+          background: $app-bg;
+          color: #ff6b6b;
+          border: none;
+          padding: 0.4em 1em;
+          border-radius: 20px;
+          cursor: pointer;
+          font-size: 13px;
+        }
+      }
+
+      img {
+        width: 10em;
+        height: 8.5em;
+        border-radius: 0.5em;
+      }
+    }
+
+    .pink {
+      background: #ffeaea;
+    }
+
+    .blue {
+      background: #eaf2ff;
+    }
+
+    .green {
+      background: #eaffea;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .promo-card {
+    flex-wrap: wrap;
+
+    span {
+      text-align: center;
+    }
+  }
+}

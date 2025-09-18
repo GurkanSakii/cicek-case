@@ -2,7 +2,7 @@ import "../styles/header.scss";
 import sepetLogo from "../assets/sepet.svg";
 import CartBar from "./CartBar";
 
-function Header({ cart, searchTerm, setSearchTerm }) {
+const Header = ({ cart, searchTerm, setSearchTerm }) => {
   const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
@@ -36,6 +36,6 @@ function Header({ cart, searchTerm, setSearchTerm }) {
       </h1>
     </>
   );
-}
+};
 
 export default Header;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/category-bar.scss";
 import categories from "../data/categories.json";
 
-function CategoryBar({ setCategory }) {
+const CategoryBar = ({ setCategory }) => {
   const [active, setActive] = useState("Tüm Kategoriler");
 
   const handleClick = (cat) => {
@@ -19,6 +19,6 @@ function CategoryBar({ setCategory }) {
       ))}
     </div>
   );
-}
+};
 
 export default CategoryBar;

@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 import "../styles/product-list.scss";
 import products from "../data/products.json";
 
-function ProductList({ category, searchTerm, cart, setCart }) {
+const ProductList = ({ category, searchTerm, cart, setCart }) => {
   let filtered = products;
 
   if (category !== "Tüm Kategoriler") {
@@ -22,6 +22,6 @@ function ProductList({ category, searchTerm, cart, setCart }) {
       )}
     </div>
   );
-}
+};
 
 export default ProductList;
